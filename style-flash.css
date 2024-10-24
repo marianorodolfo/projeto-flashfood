@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+:root {
+    --cor00:#c5ebd6;
+    --cor01:#83e1ad;
+    --cor02:#3ddc84;
+    --cor03:#2fa866;
+    --cor04:#1a5c37;
+    --cor05:#063d1e;
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor00);
+    font-family: var(--fontepadrao);
+}
+
+a.externo:after{
+    content: "\00a0\1f517";
+}
+
+header {
+    padding-top: 0px;
+    min-height:30px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    font-family: var(--fontepadrao);
+}
+
+header >h1 {
+    color: white;
+    font-family: var(--fontedestaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.268);
+}
+
+nav {
+text-align: left;
+    background-color: var(--cor05);
+    padding: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.501);
+}
+
+nav > a {
+    color: var(--cor01);
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor03);
+    color: var(--cor05);
+}
+
+main{
+background-color: white;
+    background-image: url(imagens/hamburger-4103070_1280.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+    width: 90vw;
+    height: 1000px;
+}
+
+main h1{
+    color: white;
+    padding: 50px;
+    text-align: left;
+}
+
+main h2 {
+    color: white;
+    text-align: left;
+    font-size:2.6em;
+    padding-left: 100px;
+}
+
+main p {
+    color: white;
+    text-align: left;
+    padding: 60px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 120px;
+}
+    
+li > a:hover {
+    color: red;
+    font-size: 0.9em;
+}
+
+#logo {
+    padding-left: 180px;
+    width: 70px;
+    height: 70px;
+}
+
+#logo > img {
+width: 60px;
+height: 60px;
+}
+
+img {
+    background-color: #063d1e;
+    display:inline-block ;
+    width: 60px;
+    border-radius: 30%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+    margin: 15px;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+
+img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    transition: transform 0.4s, border 0.8;
+}
